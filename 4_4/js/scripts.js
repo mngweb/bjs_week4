@@ -42,7 +42,7 @@ phone. Sformatuj je według własnego uznania.
         function error (jqXHR, status, errorThrown) {
 
             list.append($("<p></p>").text("Wystąpił błąd - status: " + status + ", rodzaj błędu:" + errorThrown));            // PYTANIE: Gdy zrobię np. w Chrome offline, to nie podaje zbytnio informacji o błędze - co można poprawić by te informacje były konkretniejsze?
-
+            // PYTANIE: Gdy zrobię np. w Chrome offline, to nie podaje zbytnio informacji o błędze - co można poprawić by te informacje były konkretniejsze?
         };
 
 
