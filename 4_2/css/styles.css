@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+}
+
+.nav-main{
+    display:none;
+    background-color: green;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -150px;
+    z-index: 999;    
+    opacity: 0;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+
+.toggle-menu{
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.toggle-menu span{
+  display: block;
+  position: absolute;
+  height: 10%;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+
+	-webkit-transition: 0.2s ease-out;
+	transition: 0.2s ease-out;  
+}
+
+.toggle-menu span:nth-child(1){
+  top: 28.333%;
+  left: 10%;
+}
+.toggle-menu span:nth-child(2){
+  top: 45.666%;
+  left: 10%;
+}
+.toggle-menu span:nth-child(3){
+  top: 61.999%;
+  left: 10%;
+}
+
+.toggle-menu.click span:nth-child(1){
+  top: 45.666%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.toggle-menu.click span:nth-child(2) {
+  opacity: 0;
+  left: -100%;
+}
+
+.toggle-menu.click span:nth-child(3){
+  top: 45.666%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

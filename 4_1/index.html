@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="http://www.wp.pl" class="this">Link</a>
+            <a href="skype:skypename?chat">Skype me!</a>
+        </nav>
+
+        <section>
+            <div id="text" class="grid grid-12 this">
+                <h1>Nagłówek</h1>
+                <p>Paragraf 1</p>
+                <p class="this"></p>
+                <p class="nothis"></p>
+                <p>Paragraf 3</p>
+            </div>
+        </section>
+
+        <section>
+            <a href="#" class="pagination-item this1">1</a>
+            <span href="#" class="pagination-item">2</span>
+            <a href="#" class="pagination-item this2">3</a>
+
+        </section>
+
+        <form action="" class="form-data">
+            <input type="checkbox" id="poland">
+            <label for="poland">From Poland</label>
+            <br><br>
+
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="female" value="female" checked>
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="text1">Name:</label>
+            <input type="text" id="text1">
+        </form>
+
+
+        <h1>Wybierz opcję:</h1>
+        <form action="" class="form-options">
+            <input type="radio" name="select" id="op1" value="1">
+            <label for="op1">wszystkie elementy div, posiadające zarówno klasę 'grid' oraz klasę 'grid-12'</label>
+            <br>
+
+            <input type="radio" name="select" id="op2" value="2">
+            <label for="op2">wszystkie elementy a, których atrybut 'href' zaczyna się na 'http', znajdujące się w elemencie o klasie 'nav'</label>
+            <br>
+
+            <input type="radio" name="select" id="op3" value="3">
+            <label for="op3">wszystkie elementy input, których typ to 'radio'' lub 'checkbox'' oraz dodatkowo nie są aktualnie zaznaczone (checked)</label>
+            <br>
+
+            <input type="radio" name="select" id="op4" value="4">
+            <label for="op4">wyłącznie pierwszy element p, który jest pusty (nie zawiera dzieci) oraz znajduje się w elemencie div z identyfikatorem 'text'</label>
+            <br>
+
+            <input type="radio" name="select" id="op5" value="5">
+            <label for="op5">wszystkie elementy z klasą 'pagination-item', które nie są elementem span</label>
+            <br>
+
+            <button class="select-button">Find</button>
+            <button class="unselect-button">Unselect</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
