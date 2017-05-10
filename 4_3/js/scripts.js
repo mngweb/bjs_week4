@@ -9,12 +9,7 @@
 
 
         function isValid(text){       
-            if ( $.trim(text) === "" ){
-                return false;
-            }
-            else{
-                return true;
-            }
+            return $.trim(text) === "";
         }
 
 
@@ -25,7 +20,7 @@
             var name = form.find("input#name"),
                 text = name.val();
 
-            if ( isValid(text) === true ){
+            if ( isValid(text) ){
                 list.append($("<li></li>").text(text));
                 name.val("");
                 name.removeClass("invalid");
