@@ -20,7 +20,8 @@ ul{
     height: 100vh;
     position: fixed;
     top: 0;
-    left: -150px;
+    /*left: -150px;*/
+    transform: translate(-150px, 0);
     z-index: 999;    
     opacity: 0;
     font-weight: bold;
@@ -47,8 +48,8 @@ ul{
   background-color: white;
   border-radius: 5px;
 
-	-webkit-transition: 0.2s ease-out;
-	transition: 0.2s ease-out;  
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;  
 }
 
 .toggle-menu span:nth-child(1){
