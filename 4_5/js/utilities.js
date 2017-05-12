@@ -1,7 +1,6 @@
 // debounce
 function debounce(fn, time) {       
     var timeout; 
-    var event_count = 0;
 
     return function(e) { 
 
