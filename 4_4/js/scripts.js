@@ -27,10 +27,10 @@ phone. Sformatuj je według własnego uznania.
 
             //// Wygenerowanie i wstawienie kodu z szablonu
             //// WERSJA 1:
-            $.each(data, function(index, user) {
-                var html = template(user);
-                list.append(html);
-            });
+            // $.each(data, function(index, user) {
+            //     var html = template(user);
+            //     list.append(html);
+            // });
 
 
             //// WERSJA 2 (inny kod w pliku html):
