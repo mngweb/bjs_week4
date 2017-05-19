@@ -60,7 +60,7 @@ phone. Sformatuj je według własnego uznania.
             //     error: error
             // });
 
-            //// WERSJA B:              // PYTANIE: Czy któraś wersja jest lepsza czy bez różnicy?
+            //// WERSJA B:
             $.ajax({
                 url: "http://code.eduweb.pl/bootcamp/users/",
                 method: "GET",
